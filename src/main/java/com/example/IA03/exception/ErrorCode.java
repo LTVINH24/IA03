@@ -11,7 +11,7 @@ public enum ErrorCode {
     INVALID_KEY(1001, "Invalid message key",HttpStatus.BAD_REQUEST),
     PASSWORD_INVALID(1004, "Password must have ≥6 chars with upper, lower, number, and symbol",HttpStatus.BAD_REQUEST),
     USER_NOT_EXISTS(1005, "User does not exist",HttpStatus.NOT_FOUND),
-    UNAUTHENTICATED(1006, "User is not authenticated",HttpStatus.UNAUTHORIZED),
+    UNAUTHENTICATED(1006, "Incorrect email or password",HttpStatus.UNAUTHORIZED),
     UNAUTHORIZED(1007, "User is not authorized",HttpStatus.FORBIDDEN),
     INVALID_EMAIL(1009, "Email format is invalid",HttpStatus.BAD_REQUEST)
     ;
